@@ -1,0 +1,35 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+/.env
+*.sqlite
+*.db
+institution_manager.db
+/.idea/
+.vscode/
+dist/
+build/
+*.egg-info/
+*.egg
+pip-log.txt
+__pypackages__/
+*.log
+
+# test and local DBs
+test_*.db
+test_*.sqlite
+test_institution_manager.db
+
+# coverage and pytest cache
+.pytest_cache/
+htmlcov/
+coverage.xml
+
+# node
+node_modules/
+
+# sourcemaps for built admin JS
+/admin/static/js/*.map

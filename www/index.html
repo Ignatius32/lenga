@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — Institution Manager</title>
+  <link rel="stylesheet" href="/admin/static/css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="#" data-route="users">Users</a>
+    <a href="#" data-route="queues">Queues</a>
+  <a href="#" data-route="agents">Agents</a>
+    <a href="#" data-route="ticket-types">Ticket Types</a>
+  <a href="#" data-route="activity-types">Activity Types</a>
+    <a href="#" data-route="activities">Activities</a>
+  <a href="#" data-route="roles-groups">Roles & Groups</a>
+  <a href="#" data-route="spaces">Spaces</a>
+  <a href="#" data-route="space-templates">Space Templates</a>
+  <a href="#" data-route="buildings">Buildings</a>
+  </nav>
+  <div id="dev-auth" style="position:fixed;right:0;top:0;padding:0.5rem;background:#fff;opacity:0.95;border-bottom-left-radius:6px;">
+    <label style="font-size:12px;display:block">Dev: X-Test-User id</label>
+    <input id="devTestUser" style="width:120px" placeholder="user id" />
+    <button id="setDevUser">Set</button>
+    <button id="clearDevUser">Clear</button>
+  </div>
+
+  <main id="app">
+    <h1>Admin Console</h1>
+    <div id="page"></div>
+  </main>
+
+  <script type="module" src="/admin/static/js/api.js"></script>
+</body>
+</html>
